@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulk Email Sender</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .cont {
+        margin: 50px auto;
+        height: 600px;
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        padding: 20px 10px;
+        border-radius: 10px;
+      }
+      button {
+        height: 30px;
+        width: 150px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        cursor: pointer;
+      }
+      textarea {
+        height: 300px;
+        width: 300px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <h1>Send Mass Email</h1>
+      <p>File must be a text file(.txt)</p>
+      <br />
+      <input type="file" name="file" id="fileInput" /><br />
+      <textarea
+        id="preview"
+        rows="20"
+        cols="40"
+        placeholder="Text File Preview"
+      ></textarea
+      ><br />
+      <button>Send Bulk Email</button>
+    </div>
+    <br />
+    <script src="./preview.js"></script>
+  </body>
+</html>
